@@ -37,8 +37,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int i) {
         myViewHolder.CityTextView.setText(cityData.get(i).getName());
-        Picasso.get().load(cityData.get(i).getImgUrl()).resize(300,300  ).into(myViewHolder.CityImageView);
-
+        /* Picasso.get()
+                .load(cityData.get(i).getImgUrl())
+                .resize(300,300  )
+                .into(myViewHolder.CityImageView);*/
+        myViewHolder.CityImageView.setImageResource(cityData.get(i).getImgUrl());
         myViewHolder.CityCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,11 +57,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public void choise(String name) {
 
-        /*switch (name) {
+        switch (name) {
             case "Kiev":
                 cityData.clear();
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", "sa", 0, "0"));
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", "sa", 0, "0"));                break;
+                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0"));
+                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0"));                break;
 
             case "Kharkov":
                 cityData.clear();
@@ -88,7 +91,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 break;
 
         }
-        notifyDataSetChanged();*/
+        notifyDataSetChanged();
     }
 
     @Override

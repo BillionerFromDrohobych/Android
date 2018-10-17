@@ -2,27 +2,28 @@ package misterpanchak.com.ostapuchi;
 
 public class City {
     private String Name;
-    private String imgUrl;
+    private int imgUrl;
     private int location;
     private String desctription;
 
 
 
-    public City(String name, String imgUrl, int location, String desctriptionk) {
+    public City(String name, int imgUrl, int location, String desctriptionk) {
         Name = name;
-        imgUrl = imgUrl;
+        this.imgUrl = imgUrl;
 
         this.location = location;
         this.desctription = desctription;
     }
 
-    public String getImgUrl() {
+    public void setImgUrl(int imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
+    public int getImgUrl() {
         return imgUrl;
     }
 
-    public void setImgUrl(String imgUrl) {
-       imgUrl = imgUrl;
-    }
 
     public String getName() {
         return Name;
