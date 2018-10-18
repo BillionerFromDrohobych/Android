@@ -18,6 +18,8 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
     private Context ccontext;
     private List<City> cityData;
+    Intent intent;
+
 
     public RecyclerViewAdapter(Context ccontext, List<City> cityData) {
         this.ccontext = ccontext;
@@ -46,7 +48,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
 
-              choise(cityData.get(i).getName());
+              choise(cityData.get(i).getName(), cityData.get(i).getImgUrl(),cityData.get(i).getLocation(),cityData.get(i).getDesctription(), cityData.get(i).getSightorcity());
 
             }
 
@@ -55,42 +57,55 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
-    public void choise(String name) {
+    public void choise(String name, int imgurl, int location, String desctription, boolean sightorcity) {
+        intent = new Intent(ccontext, SightActivity.class);
 
+        if(sightorcity ==false){
         switch (name) {
             case "Kiev":
                 cityData.clear();
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0"));
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0"));                break;
+                cityData.add(new City("Kpi", R.drawable.kiev, 0, "0", true));
+                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0", true));
+                break;
 
             case "Kharkov":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.drogobych, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
+                cityData.add(new City("Kharkiv", R.drawable.drogobych, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
                 break;
 
             case "Drohobych":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
                 break;
 
             case "London":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
                 break;
             case "Lviv":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0"));
-                break;
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                break;}
 
+        }else if(sightorcity == true) {
+        switch (name) {
+            case "Kpi":
+                intent.putExtra("name",name);
+               // intent.putExtra("description",description);
+                intent.putExtra("imgurl",imgurl);
+                intent.putExtra("location",location);
         }
+ccontext.startActivity(intent);
+        }
+
         notifyDataSetChanged();
     }
 

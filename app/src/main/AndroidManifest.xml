@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="misterpanchak.com.ostapuchi">
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +23,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".ActivityActivity" />
-
+        <activity android:name=".SightActivity"></activity>
     </application>
 
 </manifest>

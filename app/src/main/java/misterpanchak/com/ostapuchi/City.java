@@ -5,12 +5,14 @@ public class City {
     private int imgUrl;
     private int location;
     private String desctription;
+    private boolean sightorcity;
 
 
 
-    public City(String name, int imgUrl, int location, String desctriptionk) {
+    public City(String name, int imgUrl, int location, String desctriptionk,boolean sightorcity) {
         Name = name;
         this.imgUrl = imgUrl;
+        this.sightorcity = sightorcity;
 
         this.location = location;
         this.desctription = desctription;
@@ -49,5 +51,13 @@ public class City {
 
     public void setDesctription(String desctriptionk) {
         this.desctription = desctriptionk;
+    }
+
+    public boolean getSightorcity() {
+        return sightorcity;
+    }
+
+    public void setSightorcity(boolean sightorcity) {
+        this.sightorcity = sightorcity;
     }
 }
