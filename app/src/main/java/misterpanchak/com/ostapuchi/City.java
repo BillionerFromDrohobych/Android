@@ -3,13 +3,13 @@ package misterpanchak.com.ostapuchi;
 public class City {
     private String Name;
     private int imgUrl;
-    private int location;
+    private String location;
     private String desctription;
     private boolean sightorcity;
 
 
 
-    public City(String name, int imgUrl, int location, String desctriptionk,boolean sightorcity) {
+    public City(String name, int imgUrl, String location, String desctriptionk,boolean sightorcity) {
         Name = name;
         this.imgUrl = imgUrl;
         this.sightorcity = sightorcity;
@@ -37,11 +37,11 @@ public class City {
 
 
 
-    public int getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(int location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 

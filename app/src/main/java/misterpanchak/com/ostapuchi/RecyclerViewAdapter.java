@@ -57,42 +57,42 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
-    public void choise(String name, int imgurl, int location, String desctription, boolean sightorcity) {
+    public void choise(String name, int imgurl, String location, String desctription, boolean sightorcity) {
         intent = new Intent(ccontext, SightActivity.class);
 
         if(sightorcity ==false){
         switch (name) {
             case "Kiev":
                 cityData.clear();
-                cityData.add(new City("Kpi", R.drawable.kiev, 0, "0", true));
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, 0, "0", true));
+                cityData.add(new City("Kpi", R.drawable.kiev, "geo:50.454978,30.445443", "0", true));
+                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true));
                 break;
 
             case "Kharkov":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.drogobych, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.drogobych, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
                 break;
 
             case "Drohobych":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
                 break;
 
             case "London":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
                 break;
             case "Lviv":
                 cityData.clear();
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
-                cityData.add(new City("Kharkiv", R.drawable.kharkiv, 0, "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
+                cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true));
                 break;}
 
         }else if(sightorcity == true) {
