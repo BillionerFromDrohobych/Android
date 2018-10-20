@@ -34,9 +34,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\User\Downloads\Telegram Desktop\start.jpg" />
+                                      <entry key="foregroundImage" value="C:\Users\User\Downloads\Telegram Desktop\SightMap  start typing...  .png" />
                                       <entry key="foregroundLayerName" value="start" />
-                                      <entry key="outputName" value="logo" />
+                                      <entry key="outputName" value="start_background" />
                                     </map>
                                   </option>
                                 </PersistentState>
