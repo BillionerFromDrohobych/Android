@@ -26,15 +26,15 @@ SearchView sc;
         setContentView(R.layout.activity);
         cityList = new ArrayList<>();
         cityList.add(new City("Kiev", R.drawable.kiev,"", "s",false));
-        cityList.add(new City("Drohobych",R.drawable.drogobych, "", "0",false));
         cityList.add(new City("Lviv",R.drawable.lviw, "", "0",false));
+        cityList.add(new City("Drohobych",R.drawable.drogobych, "", "0",false));
        cityList.add(new City("London",R.drawable.london, "", "0",false));
         cityList.add(new City("Kharkov",R.drawable.kharkiv, "", "0",false));
         RecyclerView rv = (RecyclerView) findViewById(R.id.cityRecyclerView);
         RecyclerViewAdapter adp = new RecyclerViewAdapter(this, cityList);
 //        sc = (SearchView) findViewById(R.id.searcview1);
 
-        rv.setLayoutManager(new GridLayoutManager(this,2));
+        rv.setLayoutManager(new GridLayoutManager(this,1));
         rv.setAdapter(adp);
     }
 

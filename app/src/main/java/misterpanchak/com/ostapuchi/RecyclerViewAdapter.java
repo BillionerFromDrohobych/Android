@@ -64,7 +64,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         switch (name) {
             case "Kiev":
                 cityData.clear();
-                cityData.add(new City("Kpi", R.drawable.kiev, "geo:50.454978,30.445443", "0", true));
+                cityData.add(new City("Kyiv Politechnik University", R.drawable.kiev, "geo:50.454978,30.445443", "0", true));
                 cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true));
                 break;
 
@@ -97,7 +97,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         }else if(sightorcity == true) {
         switch (name) {
-            case "Kpi":
+            case "Kyiv Politechnik University":
                 intent.putExtra("name",name);
                // intent.putExtra("description",description);
                 intent.putExtra("imgurl",imgurl);
