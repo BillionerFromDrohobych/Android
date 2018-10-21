@@ -40,7 +40,7 @@ TextView tx3;
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) {   
         switch(v.getId()){
             case R.id.imageButton:
                 intent1 = new Intent();
