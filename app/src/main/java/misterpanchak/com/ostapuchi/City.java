@@ -6,13 +6,15 @@ public class City {
     private String location;
     private String desctription;
     private boolean sightorcity;
+    private String adress;
 
 
 
-    public City(String name, int imgUrl, String location, String desctriptionk,boolean sightorcity) {
+    public City(String name, int imgUrl, String location, String desctriptionk,boolean sightorcity, String adress) {
         Name = name;
         this.imgUrl = imgUrl;
         this.sightorcity = sightorcity;
+        this.adress = adress;
 
         this.location = location;
         this.desctription = desctription;
@@ -59,5 +61,13 @@ public class City {
 
     public void setSightorcity(boolean sightorcity) {
         this.sightorcity = sightorcity;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 }
