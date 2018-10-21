@@ -78,10 +78,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         switch (name) {
             case "Kiev":
                 cityData.clear();
-<<<<<<< HEAD
                 cityData.add(new City("Kyiv Politechnik University", R.drawable.kiev, "geo:50.454978,30.445443", "0", true));
                 cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true));
-=======
                 cityData.add(new City("Kiev Politechnik Institute", R.drawable.kiev, "geo:50.454978,30.445443", "0", true, "vul. Saint Ostapuchi"));
                 cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true,"vul. Saint Ostapuchi"));
             break;
@@ -90,7 +88,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true,"vul. Saint Ostapuchi"));
                 cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true,"vul. Saint Ostapuchi"));
                 cityData.add(new City("Kharkiv", R.drawable.kharkiv, "", "0", true,"vul. Saint Ostapuchi"));
->>>>>>> a1fe0747411a9e89252e7179f013c9df0ab1f591
                 break;
             /*case "Kharkov":
                 cityData.clear();
@@ -115,12 +112,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             */}
 
         }else if(sightorcity == true) {
-<<<<<<< HEAD
         switch (name) {
             case "Kyiv Politechnik University":
-=======
 
->>>>>>> a1fe0747411a9e89252e7179f013c9df0ab1f591
                 intent.putExtra("name",name);
                 intent.putExtra("adress",adress);
                // intent.putExtra("description",description);

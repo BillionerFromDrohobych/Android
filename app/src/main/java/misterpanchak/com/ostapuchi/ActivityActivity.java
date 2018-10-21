@@ -37,7 +37,6 @@ public class ActivityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
         cityList = new ArrayList<>();
-<<<<<<< HEAD
         cityList.add(new City("Kiev", R.drawable.kiev,"", "s",false));
         cityList.add(new City("Lviv",R.drawable.lviw, "", "0",false));
         cityList.add(new City("Drohobych",R.drawable.drogobych, "", "0",false));
@@ -48,7 +47,6 @@ public class ActivityActivity extends AppCompatActivity {
 //        sc = (SearchView) findViewById(R.id.searcview1);
 
         rv.setLayoutManager(new GridLayoutManager(this,1));
-=======
 
         cityList.add(new City("Kiev", R.drawable.kiev, "", "s", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Drohobych", R.drawable.drogobych, "", "0", false, "vul. Saint Ostapuchi"));
@@ -78,7 +76,6 @@ public class ActivityActivity extends AppCompatActivity {
         });
         adp = new RecyclerViewAdapter(this, cityList);
         rv.setLayoutManager(new GridLayoutManager(this, 1));
->>>>>>> a1fe0747411a9e89252e7179f013c9df0ab1f591
         rv.setAdapter(adp);
     }
     private void filter(String text){
