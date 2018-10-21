@@ -37,6 +37,19 @@ public class ActivityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
         cityList = new ArrayList<>();
+<<<<<<< HEAD
+=======
+        cityList.add(new City("Kiev", R.drawable.kiev,"", "s",false));
+        cityList.add(new City("Lviv",R.drawable.lviw, "", "0",false));
+        cityList.add(new City("Drohobych",R.drawable.drogobych, "", "0",false));
+       cityList.add(new City("London",R.drawable.london, "", "0",false));
+        cityList.add(new City("Kharkov",R.drawable.kharkiv, "", "0",false));
+        RecyclerView rv = (RecyclerView) findViewById(R.id.cityRecyclerView);
+        RecyclerViewAdapter adp = new RecyclerViewAdapter(this, cityList);
+//        sc = (SearchView) findViewById(R.id.searcview1);
+
+        rv.setLayoutManager(new GridLayoutManager(this,1));
+>>>>>>> 9735cca477f79e0edbb8bc53f62cfe8aaaf21a88
 
         cityList.add(new City("Kiev", R.drawable.kiev, "", "s", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Drohobych", R.drawable.drogobych, "", "0", false, "vul. Saint Ostapuchi"));

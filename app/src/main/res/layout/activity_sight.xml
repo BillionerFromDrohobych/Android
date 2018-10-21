@@ -4,26 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="#82E0AA"
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 45d1131... 1
+
+>>>>>>> parent of 45d1131... 1
+>>>>>>> 9735cca477f79e0edbb8bc53f62cfe8aaaf21a88
     android:baselineAligned="false"
     android:orientation="vertical"
     tools:context=".SightActivity">
 
     <ImageView
         android:id="@+id/imageView2"
+<<<<<<< HEAD
         android:layout_width="380dp"
         android:layout_height="241dp"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_alignParentStart="true"
+>>>>>>> 9735cca477f79e0edbb8bc53f62cfe8aaaf21a88
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
+=======
+        android:layout_width="379dp"
+        android:layout_height="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+>>>>>>> parent of 45d1131... 1
+=======
+        android:layout_width="379dp"
+        android:layout_height="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+>>>>>>> parent of 45d1131... 1
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView2"
         android:layout_alignParentStart="true"
+=======
+<<<<<<< HEAD
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+=======
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+<<<<<<< HEAD
+>>>>>>> parent of 45d1131... 1
+=======
+>>>>>>> parent of 45d1131... 1
+>>>>>>> 9735cca477f79e0edbb8bc53f62cfe8aaaf21a88
         android:fontFamily="@font/aclonica"
         android:text="Kiev Politechnik University"
         android:textAlignment="center"
@@ -31,6 +76,7 @@
         android:textSize="24sp" />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="34dp"
@@ -41,6 +87,10 @@
         android:textColor="@android:color/background_dark" />
 
     <TextView
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9735cca477f79e0edbb8bc53f62cfe8aaaf21a88
         android:id="@+id/textView3"
         android:layout_width="293dp"
         android:layout_height="90dp"
@@ -60,5 +110,57 @@
         android:layout_alignTop="@+id/textView3"
         android:layout_weight="1"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
+=======
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="Desctription"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+=======
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="Desctription"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+>>>>>>> parent of 45d1131... 1
+        android:layout_below="@+id/textView2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="Location"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+    </LinearLayout>
+<<<<<<< HEAD
+>>>>>>> parent of 45d1131... 1
+=======
+>>>>>>> parent of 45d1131... 1
 
 </RelativeLayout>
