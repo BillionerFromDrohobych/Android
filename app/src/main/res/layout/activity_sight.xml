@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 45d1131... 1
 
 >>>>>>> parent of 45d1131... 1
     android:baselineAligned="false"
@@ -15,11 +18,18 @@
     <ImageView
         android:id="@+id/imageView2"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="285dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp" />
+=======
+        android:layout_width="379dp"
+        android:layout_height="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+>>>>>>> parent of 45d1131... 1
 =======
         android:layout_width="379dp"
         android:layout_height="262dp"
@@ -38,6 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
+<<<<<<< HEAD
+>>>>>>> parent of 45d1131... 1
+=======
 >>>>>>> parent of 45d1131... 1
         android:fontFamily="@font/aclonica"
         android:text="Kiev Politechnik University"
@@ -46,6 +59,7 @@
         android:textSize="24sp" />
 
     <TextView
+<<<<<<< HEAD
 <<<<<<< HEAD
         android:id="@+id/textView3"
         android:layout_width="295dp"
@@ -79,6 +93,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+=======
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="Desctription"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+>>>>>>> parent of 45d1131... 1
         android:layout_below="@+id/textView2"
         android:orientation="horizontal">
 
@@ -98,6 +127,9 @@
             android:textAlignment="textStart"
             android:textSize="18sp" />
     </LinearLayout>
+<<<<<<< HEAD
+>>>>>>> parent of 45d1131... 1
+=======
 >>>>>>> parent of 45d1131... 1
 
 </RelativeLayout>
